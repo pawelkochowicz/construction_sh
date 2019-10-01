@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -307,6 +308,10 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: 'grazing_mace';
+  src: url("assets/img/a_grazing_mace/a_grazing_mace.otf"); }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -316,7 +321,28 @@ html {
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: white; }
+  font-family: 'Roboto', sans-serif;
+  background: #fefefe;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(19%, #fefefe), color-stop(80%, rgba(200, 200, 200, 0.983631)));
+  background: -webkit-linear-gradient(top, #fefefe 19%, rgba(200, 200, 200, 0.983631) 80%);
+  background: -o-linear-gradient(top, #fefefe 19%, rgba(200, 200, 200, 0.983631) 80%);
+  background: linear-gradient(180deg, #fefefe 19%, rgba(200, 200, 200, 0.983631) 80%); }
+
+.main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
