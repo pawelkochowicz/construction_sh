@@ -1,18 +1,22 @@
 @import "_normalize";
 @import "_variables";
-
-
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  background: rgb(254,254,254);
-  background: linear-gradient(180deg, rgba(254,254,254,1) 19%, rgba(200,200,200,0.9836309523809523) 80%);
+  background-image: url('../assets/img/paintedWall.jpg');
+  background-position: left;
+  background-size: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 .main {
@@ -22,4 +26,34 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 100%;
+}
+
+.logo_image {
+  width: 100vh;
+}
+
+.header {
+  &_title {
+    font-family: "Anton", sans-serif;
+    color: rgb(252, 0, 0);
+    font-size: 3rem;
+    letter-spacing: 2rem;
+text-shadow: 1px 1px 1px black;
+transform: rotate(-10deg);
+margin-top: 5rem;
+margin-bottom: -1rem;
+  }
+}
+
+.description {
+  &_header {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+    margin-bottom: 100px;
+    color: rgb(223, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1rem;
+    font-size: 2rem;
+  }
 }
