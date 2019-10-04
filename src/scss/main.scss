@@ -1,7 +1,6 @@
 @import "_normalize";
 @import "_variables";
-@import url("https://fonts.googleapis.com/css?family=Suez+One&display=swap&subset=latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=greek-ext,latin-ext");
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=latin-ext');
 
 html {
   box-sizing: border-box;
@@ -14,6 +13,8 @@ html {
 }
 
 body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   background-color: rgb(244, 244, 244);
   background-image: url("../assets/img/back_light.jpg");
   background-repeat: no-repeat;
@@ -24,9 +25,9 @@ body {
 }
 
 .main {
-  align-items: left;
   display: flex;
-  justify-content: left;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   height: 100vh;
   width: 100%;
@@ -42,22 +43,21 @@ body {
     font-size: 1.6rem;
     letter-spacing: 1rem;
     margin-top: 5rem;
-    margin-bottom: -1rem;
-    padding-left: 8rem;
-    font-weight: bold;
+    margin-bottom: -3rem;
   }
 }
 
 .description {
   &_header {
-    font-family: "Suez One", serif;
     display: flex;
+    font-weight: 700;
     justify-content: left;
-    margin-top: -50px;
-    margin-bottom: 100px;
-    color: rgb(173, 5, 5);
+    margin-top: -60px;
+    margin-bottom: 80px;
+    color: rgb(31, 31, 31);
     letter-spacing: 1.2rem;
     font-size: 1.3rem;
+    line-height: 2.2rem;
   }
   &_paragraph {
     letter-spacing: 0.25rem;
@@ -102,10 +102,5 @@ body {
       background-size: contain;
       background-repeat: no-repeat;
     }
-  }
-  &_link {
-    color: black;
-    font-size: 0.5rem;
-    padding-left: 50%;
   }
 }
