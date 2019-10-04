@@ -15,8 +15,8 @@ html {
 body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: rgb(244, 244, 244);
-  background-image: url("../assets/img/back_light.jpg");
+  background-color: rgb(231, 220, 216);
+  background-image: url("../assets/img/red_sofa.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: 50%;
@@ -54,7 +54,7 @@ body {
     justify-content: left;
     margin-top: -60px;
     margin-bottom: 80px;
-    color: rgb(31, 31, 31);
+    color: rgb(159, 118, 100);
     letter-spacing: 1.2rem;
     font-size: 1.3rem;
     line-height: 2.2rem;
