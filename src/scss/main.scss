@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: rgb(119, 111, 108);
+  background-color: rgb(187, 186, 191);
   background-image: url("../assets/img/8689.jpg");
   background-repeat: no-repeat;
   background-position: right;
@@ -50,18 +50,20 @@ body {
 
 .description {
   &_header {
-    font-family: "Suez One", serif;
     display: flex;
     justify-content: left;
+    margin-left: 2rem;
     margin-top: -50px;
     margin-bottom: 100px;
-    color: rgb(173, 5, 5);
+    color: rgb(105, 101, 101);
     letter-spacing: 1.2rem;
     font-size: 1.3rem;
   }
   &_paragraph {
     letter-spacing: 0.25rem;
     font-size: 1.1rem;
+    margin-left: 2rem;
+
   }
 }
 
