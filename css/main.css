@@ -351,15 +351,19 @@ body {
   margin-top: -3rem;
   margin-bottom: 6rem;
   color: #696565;
-  letter-spacing: 1.2rem;
-  font-size: 1.3rem;
-  max-width: 50%; }
+  letter-spacing: 1.1em;
+  font-size: 1.1rem;
+  max-width: 45%; }
   @media (max-width: 1400px) {
     .description_header {
       font-size: 1rem;
       margin-top: -3rem;
       margin-bottom: 4rem;
-      line-height: 2rem; } }
+      line-height: 2rem;
+      letter-spacing: 1rem; } }
+  @media (max-width: 1230px) {
+    .description_header {
+      margin-bottom: 2rem; } }
   @media (max-width: 1020px) {
     .description_header {
       max-width: 100%;
@@ -374,7 +378,8 @@ body {
   max-width: 45%; }
   @media (max-width: 1400px) {
     .description_paragraph {
-      font-size: 0.9rem; } }
+      font-size: 0.9rem;
+      letter-spacing: 0.2rem; } }
   @media (max-width: 1020px) {
     .description_paragraph {
       max-width: 100%;
@@ -396,6 +401,10 @@ body {
     width: 24px;
     background-size: contain;
     background-repeat: no-repeat; }
+  @media (max-width: 1230px) {
+    .footer_email {
+      margin-top: 2rem;
+      padding-left: 10px; } }
 
 .footer_email:hover {
   color: #523200; }
@@ -429,6 +438,10 @@ body {
     .header_title {
       margin-bottom: -2rem;
       line-height: 2rem; } }
+  @media (max-width: 1230px) {
+    .header_title {
+      margin-top: 2rem;
+      margin-bottom: -2.5rem; } }
   @media (max-width: 1020px) {
     .header_title {
       display: block;
@@ -443,14 +456,5 @@ body {
     .logo_image {
       margin-top: 2rem;
       margin-bottom: 3rem; } }
-
-.main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
 
 /*# sourceMappingURL=main.css.map */
