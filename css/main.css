@@ -5,7 +5,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Suez+One&display=swap&subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=greek-ext,latin-ext");
 html {
   line-height: 1.15;
@@ -328,8 +327,18 @@ body {
   font-family: "Noto Sans", sans-serif;
   border: 3px solid #929292;
   margin: 5px;
-  max-height: 98.5vh;
-  overflow-y: hidden; }
+  max-height: 100%;
+  max-width: 100%; }
+  @media (max-width: 1020px) {
+    body {
+      text-align: center;
+      background-color: #bbbabf;
+      background-image: none;
+      background-size: 50%;
+      border: none;
+      max-height: 98.5vh;
+      margin: 0;
+      padding: 0; } }
 
 .description_header {
   display: -webkit-box;
@@ -338,13 +347,24 @@ body {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  margin-left: 1%;
+  margin-left: 2%;
   margin-top: -3rem;
-  margin-bottom: 100px;
+  margin-bottom: 6rem;
   color: #696565;
   letter-spacing: 1.2rem;
   font-size: 1.3rem;
   max-width: 50%; }
+  @media (max-width: 1400px) {
+    .description_header {
+      font-size: 1rem;
+      margin-top: -3rem;
+      margin-bottom: 4rem;
+      line-height: 2rem; } }
+  @media (max-width: 1020px) {
+    .description_header {
+      max-width: 100%;
+      display: block;
+      font-size: 1.3rem; } }
 
 .description_paragraph {
   letter-spacing: 0.25rem;
@@ -352,6 +372,13 @@ body {
   margin-left: 2%;
   line-height: 2rem;
   max-width: 45%; }
+  @media (max-width: 1400px) {
+    .description_paragraph {
+      font-size: 0.9rem; } }
+  @media (max-width: 1020px) {
+    .description_paragraph {
+      max-width: 100%;
+      font-size: 1.1rem; } }
 
 .footer_email {
   display: inline-block;
@@ -375,7 +402,7 @@ body {
 
 .footer_telephone {
   display: inline-block;
-  padding-left: 225px; }
+  padding-left: 10%; }
   .footer_telephone::before {
     content: "";
     background: url("../assets/img/phone-call.svg");
@@ -385,6 +412,9 @@ body {
     width: 24px;
     background-size: contain;
     background-repeat: no-repeat; }
+  @media (max-width: 1200px) {
+    .footer_telephone {
+      padding-left: 7%; } }
 
 .header_title {
   color: #1f1f1f;
@@ -392,30 +422,35 @@ body {
   letter-spacing: 1rem;
   margin-top: 4rem;
   margin-bottom: -1rem;
-  padding-left: 9%;
+  margin-left: 9%;
   font-weight: bold;
-  max-width: 50%; }
+  max-width: 40%; }
+  @media (max-width: 1400px) {
+    .header_title {
+      margin-bottom: -2rem;
+      line-height: 2rem; } }
+  @media (max-width: 1020px) {
+    .header_title {
+      display: block;
+      max-width: 100%;
+      margin-left: 7%; } }
 
 .logo_image {
   width: 100vh;
   margin-top: -0.5rem;
   max-width: 50%; }
+  @media (max-width: 850px) {
+    .logo_image {
+      margin-top: 2rem;
+      margin-bottom: 3rem; } }
 
 .main {
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100vh;
-  width: 100%; }
+          flex-direction: column; }
 
 /*# sourceMappingURL=main.css.map */
