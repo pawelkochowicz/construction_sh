@@ -18,13 +18,12 @@ body {
   background-repeat: no-repeat;
   background-position: right;
   background-size: 50%;
-  font-family: "Noto Sans", sans-serif;
   border: 3px solid rgb(146, 146, 146);
+  font-family: "Noto Sans", sans-serif;
   margin: 5px;
   max-height: 100%;
   max-width: 100%;
   @media (max-width: 1020px) {
-    text-align: center;
     background-color: rgb(187, 186, 191);
     background-image: none;
     background-size: 50%;
@@ -32,6 +31,7 @@ body {
     max-height: 98.5vh;
     margin: 0;
     padding: 0;
+    text-align: center;
   }
 }
 
@@ -39,42 +39,42 @@ body {
   &_header {
     display: flex;
     justify-content: left;
+    color: rgb(105, 101, 101);
+    font-size: 1.1rem;
+    letter-spacing: 1.1em;
     margin-left: 2%;
     margin-top: -3rem;
     margin-bottom: 6rem;
-    color: rgb(105, 101, 101);
-    letter-spacing: 1.1em;
-    font-size: 1.1rem;
     max-width: 45%;
     @media (max-width: 1400px) {
       font-size: 1rem;
-      margin-top: -3rem;
-      margin-bottom: 4rem;
       line-height: 2rem;
       letter-spacing: 1rem;
+      margin-top: -3rem;
+      margin-bottom: 4rem;
     }
     @media (max-width: 1230px) {
       margin-bottom: 2rem;
     }
     @media (max-width: 1020px) {
-      max-width: 100%;
       display: block;
       font-size: 1.3rem;
+      max-width: 100%;
     }
   }
   &_paragraph {
-    letter-spacing: 0.25rem;
     font-size: 1.1rem;
-    margin-left: 2%;
+    letter-spacing: 0.25rem;
     line-height: 2rem;
+    margin-left: 2%;
     max-width: 45%;
     @media (max-width: 1400px) {
       font-size: 0.9rem;
       letter-spacing: 0.2rem;
     }
     @media (max-width: 1020px) {
-      max-width: 100%;
       font-size: 1.1rem;
+      max-width: 100%;
     }
   }
 }
@@ -82,24 +82,24 @@ body {
 .footer {
   &_email {
     display: inline-block;
-    text-decoration: none;
     color: rgb(116, 72, 1);
-    padding-left: 4%;
     margin-top: 3.5rem;
     max-width: 50%;
+    padding-left: 4%;
+    text-decoration: none;
     &::before {
       content: "";
       background: url("../assets/img/email.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
       height: 24px;
       padding-right: 25px;
       padding-left: 15px;
       width: 24px;
-      background-size: contain;
-      background-repeat: no-repeat;
     }
     @media (max-width: 1230px) {
-      margin-top: 2rem;
       padding-left: 10px;
+      margin-top: 2rem;
     }
   }
   &_email:hover {
@@ -112,12 +112,12 @@ body {
     &::before {
       content: "";
       background: url("../assets/img/phone-call.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
       height: 24px;
       padding-right: 25px;
       padding-left: 15px;
       width: 24px;
-      background-size: contain;
-      background-repeat: no-repeat;
     }
     @media (max-width: 1200px) {
       padding-left: 7%;
@@ -129,24 +129,24 @@ body {
   &_title {
     color: rgb(31, 31, 31);
     font-size: 1.6rem;
+    font-weight: bold;
     letter-spacing: 1rem;
     margin-top: 4rem;
     margin-bottom: -1rem;
     margin-left: 9%;
-    font-weight: bold;
     max-width: 40%;
     @media (max-width: 1400px) {
-      margin-bottom: -2rem;
       line-height: 2rem;
+      margin-bottom: -2rem;
     }
     @media (max-width: 1230px) {
       margin-top: 2rem;
       margin-bottom: -2.5rem;
     }
     @media (max-width: 1020px) {
-      display: block;   
+      display: block;
       max-width: 100%;
-margin-left: 7%
+      margin-left: 7%;
     }
   }
 }
@@ -156,8 +156,7 @@ margin-left: 7%
   margin-top: -0.5rem;
   max-width: 50%;
   @media (max-width: 850px) {
-margin-top: 2rem;
-margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
   }
 }
-
